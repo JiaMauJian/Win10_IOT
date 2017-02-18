@@ -1,0 +1,16 @@
+http://stackoverflow.com/questions/9794985/iis-this-configuration-section-cannot-be-used-at-this-path-configuration-lock
+
+OS: Win 10
+
+問題: 跑SignalSvr網頁出現錯誤
+Config Error: This configuration section cannot be used at this path. This happens when the section is locked at a parent level. Locking is either by default (overrideModeDefault="Deny"), or set explicitly by a location tag with overrideMode="Deny" or the legacy allowOverride="false".
+
+解決辦法: 
+I had the same problem. Don't remember where I found it on the web, but here is what I did:
+
+Click "Start button"
+in the search box, enter "Turn windows features on or off"
+in the features window, Click: "Internet Information Services"
+Click: "World Wide Web Services"
+Click: "Application Development Features"
+Check (enable) the features. I checked all but CGI.

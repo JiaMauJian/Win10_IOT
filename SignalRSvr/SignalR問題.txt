@@ -1,0 +1,6 @@
+當Client執行 _HubConnection.Start().Wait(); 時候
+
+發生錯誤，'System.AggregateException' 類型的例外狀況發生於 mscorlib.ni.dll，但使用者程式碼未加以處理
+
+解決方法: Client和Server不能Run在同一台電腦上
+

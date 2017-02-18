@@ -1,0 +1,8 @@
+錯誤: Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult
+Exception thrown: 'System.UnauthorizedAccessException' in mscorlib.ni.dll
+WinRT information: Access is denied.
+Speech recognizer state: Idle"
+
+解決方法: 
+You can solve this problem by going to Project Properties> Application> Click on Package Manifest> Capabilities> Make sure Microphone is checked.
+
